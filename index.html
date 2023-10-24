@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+
+    <h1 class="Lab">athlete student registration </h1>
+  </head>
+  <body style="background-color: aquamarine;" class="container bg bg-secondary">
+    <br />
+
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-name">Student first name</label>
+              <input
+                id="first-name"
+                class="form-group"
+                type="text"
+                placeholder="Student"
+              />
+            </div>
+
+            <div class="col-sm">
+              <div class="form-group">
+                <label for="new-name">Student last name</label>
+                <input
+                  id="last-name"
+                  class="form-group"
+                  type="text"
+                  placeholder="Student"
+                />
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="form-group">
+                <label for="DOB"> Student DOB</label>
+                <input
+                  id="DOB"
+                  class="form-group"
+                  type="date"
+                  placeholder="Student DOB"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group">
+        <label for="new-date" class="text-bg-warning"> Select date </label>
+        <input id="new-date" type="date" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="new-time" class="text-bg-warning">Select Time</label>
+        <input id="new-time" type="time" class="form-control" />
+      </div>
+    </div>
+
+    <div>
+      <button
+        id="add"
+        class="form-control-lg fs-3 btn btn-warning m-4 float-center"
+      >
+        create 
+      </button>
+    </div>
+
+    <table id="list" class="table table-warning table-striped">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>DOB</th>
+          <th>Date</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+    </table>
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
